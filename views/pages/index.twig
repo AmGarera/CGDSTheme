@@ -1,0 +1,107 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+
+    {% include '/page-slider.twig' %}
+    <div class="container-fluid">
+    {% filter shortcodes %}
+        [masterslider id="1"]
+        {% endfilter %}
+        <div class="row our-story">
+            {#<div class="col-md-2"></div>#}
+            <div class="col-md-6 see-our-story">
+                <h2 class="our-story-title text-uppercase"><b>Our Story</b></h2>
+                <p>See a closer look into more
+                    about us and what we do.</p>
+                <a class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>See Our Story ></b></a>
+            </div>
+            <br class="hidden-lg hidden-md">
+            <div class="col-md-6">
+                <img src="http://via.placeholder.com/450x150" alt="Our Story Picture">
+            </div>
+        </div>
+        {#Welcome DIV#}
+        <div class="row welcome-cgds">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p>
+                    <span class="text-center text-uppercase orange">Welcome To</span>
+                    <span class="text-center"><h2 class="text-uppercase">THE CLEMSON GAMEDAY SHOW</h2></span>
+                    <br>
+                    <span class="text-center">Tajh Boyd, T.V Williams and special guests bring you the exclusive Clemson football pregame show every gameday 30 minutes before kickoff.</span>
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        {#Welcome#}
+        <div class="row welcome-cgds2">
+            {#Row 2#}
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <div class="imageAndText next-show-text">
+                        <img style="opacity: .7" src="http://theclemsongamedayshow.com/wp-content/uploads/2016/10/provider_tv_Vector_Clipart.png" class="align-center img-responsive" />
+                        <div class="col">
+                            <div class="col-sm-4">
+                                <p class="orange">Next</p>
+                                <h2>SHOW</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {#<span class="text-uppercase "> next show</span>#}
+                <span class="next-show-event"><p>{% include 'page-next-event-text.twig' %}</p></span>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        {#Episodes#}
+
+        <div class="row">
+            <div class="container">
+            <div class="col-md-12">
+            <h2 class="white-text text-uppercase">Episodes</h2>
+                <p class="white-text">Please select an episode below to view previews of our full episodes:</p>
+                {#Thumbnails for episodes go here#}
+                {% filter shortcodes %}
+                    [masterslider id="2"]
+                    {% endfilter %}
+                <br>
+                <a class="btn btn-default btn-lg text-uppercase center" href="#" role="button"><b>View Full Episodes ></b></a>
+                <br>
+            </div>
+            </div>
+        </div>
+
+        {#White Background?#}
+
+        {#Sponsors#}
+        <div class="row">
+            <div class="container">
+                <div class="col-md-1">
+                    <h2 class="white-text text-uppercase">Sponsors</h2>
+                </div>
+                <div class="col-md-11">
+                    <hr>
+                </div>
+                    <br>
+                    <a style="float: right" class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>Advertise With Us</b></a>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        {#3 Colored Divs#}
+        <div class="col-md-4 grey-gameday"></div>
+        <div class="col-md-4 yellow-gameday"></div>
+        <div class="col-md-4 orange-gameday"></div>
+
+
+    </div>
+    {#{% for post in posts %}#}
+        {#{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}#}
+    {#{% endfor %}#}
+
+{% endblock %}

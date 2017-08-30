@@ -1,0 +1,133 @@
+/*  Theme Name: Branch
+    Description: A WordPress starter theme based on Timber library and Bootstrap.
+    Version: 1.0.0
+    Author: JeyKeu <shekhanzai.baloch@gmail.com>
+*/
+@import url('assets/build/css/all.min.css');
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Raleway');
+
+
+/*Where the real CSS Starts*/
+body {
+    font-family: "Raleway", sans-serif;
+    color: #7A7A7A;
+    background-color: #353535;
+}
+h2,h3 {
+    font-family: "Open Sans", sans-serif;
+}
+/*Bootstrap Overrides*/
+.navbar {
+    background-color: #353535;
+}
+.navbar-default {
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FDA641;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FDA641;
+}
+.btn-default {
+    color: white;
+    background-color: transparent;
+}
+.btn-primary {
+    color: white;
+    background-color: rgb(255,156,0);
+}
+
+/*Helper Classes*/
+
+.ms-timerbar {
+    height: 0 !important;
+}.ms-time-bar {
+    height: 0 !important;
+}
+ .white-text {
+     color: white;
+ }
+
+.center {
+    display: block;
+    margin: auto;
+    width: 19em;
+}
+
+/*Nav icons*/
+
+
+/*Custom CSS*/
+.our-story {
+    background-color: rgb(53,53,53);
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.our-story-title {
+    color: white;
+}
+.see-our-story{
+    text-align: center;
+}
+/*Welcome*/
+.welcome-cgds {
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(208,208,208);
+}
+.welcome-cgds2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(208,208,208);
+}
+.next-show-text {
+    float: left;
+}
+.next-show-event {
+    float: right;
+}
+.orange{
+    color: #FDA641;
+}
+.imageAndText {position: relative;}
+.imageAndText .col {position:
+        absolute; z-index: 1; top: 3.0em; left: 1.0em;}
+
+ /*Episodes*/
+
+
+ /*Gameday*/
+.grey-gameday {
+ background-color: rgb(148,148,148);
+}
+.yellow-gameday {
+background-color: rgb(254,208,75);
+}
+.orange-gameday {
+background-color: #fda641;
+}
+
+/*Email Signup*/
+.email-signup {
+    /*padding-top: 20px;*/
+    background-color: rgb(208,208,208);
+    text-align: center;
+    width: auto;
+    padding-bottom: 15em;
+}
+.email-signup-title {
+    text-align: left;
+    color: white;
+}
+
+
+/*Phone*/
+@media only screen and (max-width: 800px) {
+
+    .imageAndText .col {position:
+            absolute; z-index: 1; top: 9.0em; left: 9.0em;}
+
+}
