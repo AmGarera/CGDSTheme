@@ -1,14 +1,17 @@
 <footer id="footer">
     {#Email Signup#}
+    <br>
     <div class="email-signup">
         <div class="col-md-4">
-            <span class="text-uppercase"><h3>email signup</h3></span>
+            <span class="white-text text-uppercase"><h3>email signup</h3></span>
             <br>
-            <form class="form-inline">
+            <form class="form-inline" action="https://formspree.io/your@email.com"
+                  method="POST">
                 <div class="form-group">
-                    <label for="exampleInputName2">Email</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Your Email">
-                    <button type="submit" class="btn btn-primary"> > </button>
+                    {#<label for="exampleInputName2">Email</label>#}
+                    <input type="email" name="_replyto" class="form-control" id="exampleInputName2"
+                           placeholder="Your Email">
+                    <button type="submit" value="Send" class="btn btn-primary"> ></button>
                 </div>
 
             </form>

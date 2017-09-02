@@ -2,22 +2,23 @@
 
 {% block content %}
 
-    {% include '/page-slider.twig' %}
     <div class="container-fluid">
     {% filter shortcodes %}
         [masterslider id="1"]
         {% endfilter %}
         <div class="row our-story">
-            {#<div class="col-md-2"></div>#}
-            <div class="col-md-6 see-our-story">
-                <h2 class="our-story-title text-uppercase"><b>Our Story</b></h2>
-                <p>See a closer look into more
-                    about us and what we do.</p>
-                <a class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>See Our Story ></b></a>
-            </div>
-            <br class="hidden-lg hidden-md">
-            <div class="col-md-6">
-                <img src="http://via.placeholder.com/450x150" alt="Our Story Picture">
+            <div class="container">
+                {#<div class="col-md-2"></div>#}
+                <div class="col-md-6 see-our-story">
+                    <h2 class="our-story-title text-uppercase"><b>Our Story</b></h2>
+                    <p>See a closer look into more
+                        about us and what we do.</p>
+                    <a class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>See Our Story ></b></a>
+                </div>
+                <br class="hidden-lg hidden-md">
+                <div class="col-md-6">
+                    <img src="http://via.placeholder.com/450x150" alt="Our Story Picture">
+                </div>
             </div>
         </div>
         {#Welcome DIV#}
@@ -51,7 +52,7 @@
                     </div>
                 </div>
                 {#<span class="text-uppercase "> next show</span>#}
-                <span class="next-show-event"><p>{% include 'page-next-event-text.twig' %}</p></span>
+                <span class="next-show-event"><p> Kent State!{% include 'page-next-event-text.twig' %}</p></span>
             </div>
             <div class="col-md-4"></div>
         </div>
@@ -73,23 +74,51 @@
             </div>
             </div>
         </div>
+        <hr>
+        {#FB Page#}
+        <div class="row our-story">
+            <div class="container">
+                {#<div class="col-md-2"></div>#}
+                <div class="col-md-6 see-our-story">
+                    <h2 class="our-story-title text-uppercase"><b>DeShaun Watson 4 Heisman</b></h2>
+                    <p>Explore our Facebook page for weekly updates and prime Clemson news.</p>
+                    <a class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>Visit Our Facebook page
+                            ></b></a>
+                </div>
+                <br class="hidden-lg hidden-md">
+                <div class="col-md-6">
+                    <img src="http://clemsongamedayshow.dev/wp-content/uploads/2017/09/computer.png"
+                         class="img-responsive" alt="DeShaun Watson 4 Heisman Picture">
+                </div>
+            </div>
+        </div>
 
         {#White Background?#}
 
         {#Sponsors#}
         <div class="row">
             <div class="container">
-                <div class="col-md-1">
-                    <h2 class="white-text text-uppercase">Sponsors</h2>
+                <div class="col-md-12">
+                    <h2 class="white-text text-uppercase line-word-clear"><span>Sponsors</span></h2>
                 </div>
-                <div class="col-md-11">
-                    <hr>
+                <div class="col-md-6">
+                    <img class="img-responsive sponsor-img-width"
+                         src="http://clemsongamedayshow.dev/wp-content/uploads/2017/09/Sponsors2.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive sponsor-img-width"
+                         src="http://clemsongamedayshow.dev/wp-content/uploads/2017/09/Sponsor1.png" alt="">
                 </div>
                     <br>
-                    <a style="float: right" class="btn btn-default btn-lg text-uppercase" href="#" role="button"><b>Advertise With Us</b></a>
+                <a style="float: right"> <img style="width: 10em"
+                                              src="http://clemsongamedayshow.dev/wp-content/uploads/2017/09/AdvertiseWithUs.png"
+                                              alt=""></a>
                     <br>
                 </div>
             </div>
+        <div class="container">
+            <h2 class="line-word-clear"><span></span></h2>
+        </div>
         </div>
         <br>
 

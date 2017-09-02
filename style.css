@@ -17,6 +17,7 @@ body {
 h2,h3 {
     font-family: "Open Sans", sans-serif;
 }
+
 /*Bootstrap Overrides*/
 .navbar {
     background-color: #353535;
@@ -29,6 +30,8 @@ h2,h3 {
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #FDA641;
+    background-color: white;
+
 }
 .btn-default {
     color: white;
@@ -39,13 +42,23 @@ h2,h3 {
     background-color: rgb(255,156,0);
 }
 
-/*Helper Classes*/
-
+/*Plugin overrides*/
 .ms-timerbar {
     height: 0 !important;
 }.ms-time-bar {
     height: 0 !important;
 }
+
+._self {
+    color: orange;
+}
+
+.pt-cv-readmore {
+    color: black !important;
+    background-color: white !important;
+}
+
+/*Helper Classes*/
  .white-text {
      color: white;
  }
@@ -56,6 +69,35 @@ h2,h3 {
     width: 19em;
 }
 
+.line-word {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.line-word span {
+    background: #353535;
+    padding: 0 10px;
+}
+
+.line-word-clear {
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid #fff;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.line-word-clear span {
+    background: #353535;
+    padding: 0 10px;
+}
+
+.head-space {
+    padding-top: 4.5em;
+}
 /*Nav icons*/
 
 
@@ -70,7 +112,7 @@ h2,h3 {
     color: white;
 }
 .see-our-story{
-    text-align: center;
+    text-align: left;
 }
 /*Welcome*/
 .welcome-cgds {
@@ -88,10 +130,16 @@ h2,h3 {
 }
 .next-show-event {
     float: right;
+
 }
 .orange{
     color: #FDA641;
 }
+
+.sponsor-img-width {
+    width: 50%;
+}
+
 .imageAndText {position: relative;}
 .imageAndText .col {position:
         absolute; z-index: 1; top: 3.0em; left: 1.0em;}
@@ -101,10 +149,10 @@ h2,h3 {
 
  /*Gameday*/
 .grey-gameday {
- background-color: rgb(148,148,148);
+    background-color: #949494;
 }
 .yellow-gameday {
-background-color: rgb(254,208,75);
+    background-color: #fed04b;
 }
 .orange-gameday {
 background-color: #fda641;
@@ -112,7 +160,7 @@ background-color: #fda641;
 
 /*Email Signup*/
 .email-signup {
-    /*padding-top: 20px;*/
+    padding-top: 20px;
     background-color: rgb(208,208,208);
     text-align: center;
     width: auto;
@@ -130,4 +178,7 @@ background-color: #fda641;
     .imageAndText .col {position:
             absolute; z-index: 1; top: 9.0em; left: 9.0em;}
 
+    .sponsor-img-width {
+        width: 100%;
+    }
 }
