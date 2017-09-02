@@ -171,6 +171,16 @@ background-color: #fda641;
     color: white;
 }
 
+.social-icons li {
+    display: inline;
+    list-style-type: none;
+    font-size: xx-large;
+}
+
+.mini-icons {
+    width: 2em;
+    align-items: center;
+}
 
 /*Phone*/
 @media only screen and (max-width: 800px) {
