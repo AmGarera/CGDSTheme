@@ -3,7 +3,21 @@
     Version: 1.0.0
     Author: JeyKeu <shekhanzai.baloch@gmail.com>
 */
-@import url('assets/build/css/all.min.css');
+@import 'node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+.footer-sticky {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.footer-sticky p {
+    padding: 10px;
+    margin: 0px;
+}
 /*Font Import*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Raleway');
 
