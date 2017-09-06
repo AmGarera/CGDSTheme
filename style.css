@@ -151,7 +151,7 @@ h2,h3 {
 }
 
 .sponsor-img-width {
-    width: 50%;
+    width: 20em;
 }
 
 .imageAndText {position: relative;}
@@ -194,6 +194,16 @@ background-color: #fda641;
 .mini-icons {
     width: 2em;
     align-items: center;
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Aligner-item {
+    max-width: 50%;
 }
 
 /*Phone*/
